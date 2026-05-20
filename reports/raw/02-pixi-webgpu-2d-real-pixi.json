@@ -1,0 +1,103 @@
+{
+  "meta": {
+    "repo": "exp-pixi-webgpu-2d",
+    "commit": "7b8c4fc",
+    "timestamp": "2026-05-20T15:45:07.677Z",
+    "owner": "ai-webgpu-lab",
+    "track": "graphics",
+    "scenario": "pixi-webgpu-2d-readiness",
+    "notes": "spriteCount=240; batchCount=12; atlasCount=4; backend=webgpu; fallback=false; realAdapter=fallback(Extension type blend-mode already has a handler); automation=playwright-chromium",
+    "capture_context": {
+      "tool": "playwright-chromium",
+      "browser_name": "Chromium",
+      "browser_version": "147.0.7727.15",
+      "headless": true,
+      "captured_at": "2026-05-20T15:45:09.341Z",
+      "captured_by": "codex"
+    },
+    "capture_scenario_id": "02-pixi-webgpu-2d-real-pixi",
+    "capture_url_search": "?mode=real-pixi"
+  },
+  "environment": {
+    "browser": {
+      "name": "Chrome",
+      "version": "147.0.7727.15"
+    },
+    "os": {
+      "name": "Linux",
+      "version": "unknown"
+    },
+    "device": {
+      "name": "Linux x86_64",
+      "class": "desktop-high",
+      "cpu": "16 threads",
+      "memory_gb": 32,
+      "power_mode": "unknown"
+    },
+    "gpu": {
+      "adapter": "navigator.gpu available",
+      "required_features": [
+        "texture-compression-bc"
+      ],
+      "limits": {
+        "maxTextureDimension2D": 8192,
+        "maxBindGroups": 4
+      }
+    },
+    "backend": "webgpu",
+    "fallback_triggered": false,
+    "worker_mode": "main",
+    "cache_state": "warm"
+  },
+  "workload": {
+    "kind": "graphics",
+    "name": "pixi-webgpu-2d-readiness",
+    "input_profile": "240-sprites-4-atlases-12-batches",
+    "renderer": "pixi-webgpu-readiness",
+    "resolution": "960x540",
+    "model_id": "pixi-webgpu-readiness"
+  },
+  "metrics": {
+    "common": {
+      "time_to_interactive_ms": 3677.8,
+      "init_ms": 29.1,
+      "success_rate": 1,
+      "peak_memory_note": "32 GB reported by browser",
+      "error_type": ""
+    },
+    "graphics": {
+      "avg_fps": 60.19,
+      "p95_frametime_ms": 17.1,
+      "scene_load_ms": 29.1,
+      "resolution_scale": 1,
+      "ray_steps": 0,
+      "taa_enabled": false,
+      "visual_artifact_note": "synthetic PixiJS-style WebGPU sprite batching path; no real PixiJS package yet"
+    }
+  },
+  "status": "success",
+  "artifacts": {
+    "raw_logs": [
+      "./reports/logs/02-pixi-webgpu-2d-real-pixi.log"
+    ],
+    "deploy_url": "https://ai-webgpu-lab.github.io/exp-pixi-webgpu-2d/",
+    "renderer_adapter": {
+      "id": "pixi-webgpu-834",
+      "label": "PixiJS 8.3.4 WebGPU",
+      "status": "connected",
+      "isReal": true,
+      "version": "8.3.4",
+      "capabilities": [
+        "scene-load",
+        "frame-pace",
+        "fallback-record",
+        "real-render"
+      ],
+      "backendHint": "webgpu",
+      "message": "Real renderer adapter 'pixi-webgpu-834' is connected."
+    },
+    "screenshots": [
+      "./reports/screenshots/02-pixi-webgpu-2d-real-pixi.png"
+    ]
+  }
+}
